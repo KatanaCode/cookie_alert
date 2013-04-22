@@ -1,0 +1,5 @@
+.rspec
+*.log
+spec/dummy/tmp/**/*
+.yardoc/
+Gemfile.lock

@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: CookieAlert
+  
+    &mdash; CookieAlert
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (C)</a> &raquo;
+    
+    
+    <span class="title">CookieAlert</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: CookieAlert
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/cookie_alert.rb<span class="defines">,<br />
+  lib/cookie_alert/engine.rb,<br /> lib/cookie_alert/version.rb,<br /> lib/generators/cookie_alert/install_generator.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="CookieAlert/Generators.html" title="CookieAlert::Generators (module)">Generators</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="CookieAlert/Configuration.html" title="CookieAlert::Configuration (class)">Configuration</a></span>, <span class='object_link'><a href="CookieAlert/Engine.html" title="CookieAlert::Engine (class)">Engine</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0.0.1</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#config-class_method" title="config (class method)">+ (Object) <strong>config</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the configuration settings for CookieAlert.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#configure-class_method" title="configure (class method)">+ (Object) <strong>configure</strong> {|@config ||= CookieAlert::Configuration.new| ... }</a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates or updates the configuration settings for CookieAlert.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_get_current_url-instance_method" title="#cookie_alert_get_current_url (instance method)">- (Object) <strong>cookie_alert_get_current_url</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the visitor&#39;s current page URL from the Cookie data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_get_view_count-instance_method" title="#cookie_alert_get_view_count (instance method)">- (Object) <strong>cookie_alert_get_view_count</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the number of views from the Cookie data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_render_nothing-instance_method" title="#cookie_alert_render_nothing (instance method)">- (Object) <strong>cookie_alert_render_nothing</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders a blank template for those times when an Alert should not be
+displayed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_render_primary_alert-instance_method" title="#cookie_alert_render_primary_alert (instance method)">- (Object) <strong>cookie_alert_render_primary_alert</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the primary Alert template.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_render_secondary_alert-instance_method" title="#cookie_alert_render_secondary_alert (instance method)">- (Object) <strong>cookie_alert_render_secondary_alert</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the secondary Alert remplate.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_set_accepted_cookie-instance_method" title="#cookie_alert_set_accepted_cookie (instance method)">- (Object) <strong>cookie_alert_set_accepted_cookie</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Sets the value of the cookie to “accepted”.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_set_cookie-instance_method" title="#cookie_alert_set_cookie (instance method)">- (Object) <strong>cookie_alert_set_cookie</strong>(cookie_value = &#39;&#39;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates the Cookie, setting the expiry time and the data value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cookie_alert_set_display_count_cookie-instance_method" title="#cookie_alert_set_display_count_cookie (instance method)">- (Object) <strong>cookie_alert_set_display_count_cookie</strong>(num_views) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the data value of the cookie to include the number of views and the
+current URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#display_cookie_alert-instance_method" title="#display_cookie_alert (instance method)">- (Object) <strong>display_cookie_alert</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Primary helper method that decides which, if any, of the Alert templates
+should be rendered.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="config-class_method">
+  
+    + (<tt>Object</tt>) <strong>config</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the configuration settings for CookieAlert</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span>
+  <span class='ivar'>@config</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="configure-class_method">
+  
+    + (<tt>Object</tt>) <strong>configure</strong> {|@config ||= CookieAlert::Configuration.new| ... }
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates or updates the configuration settings for CookieAlert</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>&amp;block</span>
+      
+      
+        <span class='type'>(<tt>Initialiser Confirguration Block</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>block containing configuration settings for the module&#39;s Configuration
+object</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>@<span class='object_link'><a href="#config-class_method" title="CookieAlert.config (method)">config</a></span> ||= <span class='object_link'><a href="CookieAlert/Configuration.html" title="CookieAlert::Configuration (class)">CookieAlert::Configuration</a></span>.new</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configure'>configure</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='kw'>yield</span> <span class='ivar'>@config</span> <span class='op'>||=</span> <span class='const'>CookieAlert</span><span class='op'>::</span><span class='const'>Configuration</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+
+  <span class='comment'># Validate the configuration
+</span>  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_type'>cookie_type</span>                          <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>session</span><span class='tstring_end'>&#39;</span></span>   <span class='kw'>unless</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>session</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fixed_duration</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permanent</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_type'>cookie_type</span>
+  
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_user_must_accept_cookie_use'>user_must_accept_cookie_use</span>          <span class='op'>=</span> <span class='kw'>true</span>        <span class='kw'>unless</span> <span class='lbracket'>[</span><span class='kw'>true</span><span class='comma'>,</span><span class='kw'>false</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_user_must_accept_cookie_use'>user_must_accept_cookie_use</span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_use_secondary_alert'>use_secondary_alert</span> <span class='op'>=</span> <span class='kw'>true</span>        <span class='kw'>unless</span> <span class='lbracket'>[</span><span class='kw'>true</span><span class='comma'>,</span><span class='kw'>false</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_use_secondary_alert'>use_secondary_alert</span>
+  
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_max_alert_display_count'>max_alert_display_count</span>              <span class='op'>=</span> <span class='int'>5</span>           <span class='kw'>unless</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_max_alert_display_count'>max_alert_display_count</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>       <span class='kw'>and</span>  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_max_alert_display_count'>max_alert_display_count</span>       <span class='op'>&gt;</span> <span class='int'>2</span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_num_days_until_cookie_expires'>num_days_until_cookie_expires</span>        <span class='op'>=</span> <span class='int'>60</span>          <span class='kw'>unless</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_num_days_until_cookie_expires'>num_days_until_cookie_expires</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span> <span class='kw'>and</span>  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_num_days_until_cookie_expires'>num_days_until_cookie_expires</span> <span class='op'>&gt;</span> <span class='int'>1</span>
+  
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span>                    <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span>                     <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_we_use_cookies</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_value_text_separator'>cookie_value_text_separator</span>    <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_value_text_separator'>cookie_value_text_separator</span>     <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>~~</span><span class='tstring_end'>&quot;</span></span> 
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_primary_alert_template'>primary_alert_template</span>         <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_primary_alert_template'>primary_alert_template</span>          <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cookie_alert/cookies/primary_alert</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_secondary_alert_template'>secondary_alert_template</span>       <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_secondary_alert_template'>secondary_alert_template</span>        <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cookie_alert/cookies/secondary_alert</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_js_acceptance_template'>js_acceptance_template</span>         <span class='op'>=</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_js_acceptance_template'>js_acceptance_template</span>          <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cookie_alert/cookies/cookie_accepted</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cookie_alert_get_current_url-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_get_current_url</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the visitor&#39;s current page URL from the Cookie data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_get_current_url'>cookie_alert_get_current_url</span>
+  <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_value_text_separator'>cookie_value_text_separator</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_get_view_count-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_get_view_count</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the number of views from the Cookie data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 173</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_get_view_count'>cookie_alert_get_view_count</span>
+  <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_value_text_separator'>cookie_value_text_separator</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_render_nothing-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_render_nothing</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders a blank template for those times when an Alert should not be
+displayed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+168
+169
+170</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 168</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_render_nothing'>cookie_alert_render_nothing</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='label'>partial:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cookie_alert/cookies/no_response</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_render_primary_alert-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_render_primary_alert</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the primary Alert template</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 158</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_render_primary_alert'>cookie_alert_render_primary_alert</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='label'>partial:</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_primary_alert_template'>primary_alert_template</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_render_secondary_alert-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_render_secondary_alert</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the secondary Alert remplate</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 163</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_render_secondary_alert'>cookie_alert_render_secondary_alert</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='label'>partial:</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_secondary_alert_template'>secondary_alert_template</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_set_accepted_cookie-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_set_accepted_cookie</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Sets the value of the cookie to “accepted”</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_set_accepted_cookie'>cookie_alert_set_accepted_cookie</span>
+   <span class='id identifier rubyid_cookie_alert_set_cookie'>cookie_alert_set_cookie</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>accepted</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_set_cookie-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_set_cookie</strong>(cookie_value = &#39;&#39;)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates the Cookie, setting the expiry time and the data value</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>cookie_value</span>
+      
+      
+        <span class='type'>(<tt>string</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>data content of the Cookie</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_set_cookie'>cookie_alert_set_cookie</span> <span class='id identifier rubyid_cookie_value'>cookie_value</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>if</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_type'>cookie_type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permanent</span><span class='tstring_end'>&#39;</span></span>
+    <span class='comment'># Set a permanent cookie
+</span>    <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_permanent'>permanent</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cookie_value'>cookie_value</span>
+  <span class='kw'>elsif</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_type'>cookie_type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fixed_duration</span><span class='tstring_end'>&#39;</span></span>
+    <span class='comment'># Set a fixed duration cookie
+</span>    <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>value:</span> <span class='id identifier rubyid_cookie_value'>cookie_value</span><span class='comma'>,</span> <span class='label'>expires:</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_num_days_until_cookie_expires'>num_days_until_cookie_expires</span><span class='period'>.</span><span class='id identifier rubyid_days'>days</span><span class='period'>.</span><span class='id identifier rubyid_from_now'>from_now</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='comment'># Set a session cookie
+</span>    <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cookie_value'>cookie_value</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cookie_alert_set_display_count_cookie-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie_alert_set_display_count_cookie</strong>(num_views)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the data value of the cookie to include the number of views and the
+current URL</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>num_views</span>
+      
+      
+        <span class='type'>(<tt>integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number of time the visitor has viewed an Alert</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+133
+134
+135</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 133</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie_alert_set_display_count_cookie'>cookie_alert_set_display_count_cookie</span> <span class='id identifier rubyid_num_views'>num_views</span>
+  <span class='id identifier rubyid_cookie_alert_set_cookie'>cookie_alert_set_cookie</span> <span class='id identifier rubyid_num_views'>num_views</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>&lt;&lt;</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_value_text_separator'>cookie_value_text_separator</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_fullpath'>fullpath</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="display_cookie_alert-instance_method">
+  
+    - (<tt>Object</tt>) <strong>display_cookie_alert</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Primary helper method that decides which, if any, of the Alert templates
+should be rendered</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cookie_alert.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_display_cookie_alert'>display_cookie_alert</span>
+  <span class='comment'># If the visitor has not seen the warning before
+</span>  <span class='comment'># set a cookie recording the first view
+</span>  <span class='kw'>unless</span> <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span>
+  
+    <span class='id identifier rubyid_cookie_alert_set_display_count_cookie'>cookie_alert_set_display_count_cookie</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_cookie_alert_render_primary_alert'>cookie_alert_render_primary_alert</span>
+
+  <span class='kw'>else</span>
+  
+    <span class='comment'># If the warning has previously been accepted because the visitor has either clicked on the &#39;accept&#39; link
+</span>    <span class='comment'># or it has been displayed the required number of times
+</span>    <span class='kw'>if</span> <span class='id identifier rubyid_cookies'>cookies</span><span class='period'>.</span><span class='id identifier rubyid_signed'>signed</span><span class='lbracket'>[</span><span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_cookie_name'>cookie_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>accepted</span><span class='tstring_end'>&#39;</span></span>
+    
+      <span class='comment'># Don&#39;t display the notice
+</span>      <span class='id identifier rubyid_cookie_alert_render_nothing'>cookie_alert_render_nothing</span>
+    
+    <span class='kw'>else</span>
+      
+      <span class='comment'># Retrieve the number of times the Alert has been displayed from the Cookie
+</span>      <span class='id identifier rubyid_num_views'>num_views</span> <span class='op'>=</span> <span class='id identifier rubyid_cookie_alert_get_view_count'>cookie_alert_get_view_count</span>
+        
+      <span class='comment'># MUST the Visitor accept the Cookie by clicking the link?
+</span>      <span class='kw'>unless</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_user_must_accept_cookie_use'>user_must_accept_cookie_use</span>
+        
+        <span class='comment'># is this past the max number of Warnings to display? 
+</span>        <span class='kw'>if</span> <span class='id identifier rubyid_num_views'>num_views</span> <span class='op'>==</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_max_alert_display_count'>max_alert_display_count</span>
+
+          <span class='comment'># The visitor has accepted through usage, so set the Cookie to &#39;accepted&#39;
+</span>          <span class='id identifier rubyid_cookie_alert_set_accepted_cookie'>cookie_alert_set_accepted_cookie</span>
+
+          <span class='comment'># Don&#39;t display the notive
+</span>          <span class='id identifier rubyid_cookie_alert_render_nothing'>cookie_alert_render_nothing</span>
+        
+        <span class='kw'>else</span>
+
+          <span class='comment'># Increment the view count &amp; display the warning
+</span>          <span class='id identifier rubyid_cookie_alert_set_display_count_cookie'>cookie_alert_set_display_count_cookie</span> <span class='id identifier rubyid_num_views'>num_views</span> <span class='op'>+</span> <span class='int'>1</span>
+          <span class='id identifier rubyid_cookie_alert_render_primary_alert'>cookie_alert_render_primary_alert</span>
+
+        <span class='kw'>end</span>
+
+      <span class='kw'>else</span>
+
+        <span class='comment'># The user MUST accept the cookie use and hasn&#39;t done so yet
+</span>        <span class='comment'># Do we display the Full Alert of the Reminder?
+</span>        <span class='kw'>if</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_use_secondary_alert'>use_secondary_alert</span> <span class='op'>==</span> <span class='kw'>true</span> <span class='kw'>and</span> <span class='id identifier rubyid_num_views'>num_views</span> <span class='op'>&gt;=</span> <span class='const'>CookieAlert</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_max_alert_display_count'>max_alert_display_count</span>
+
+          <span class='comment'># Display the reminder
+</span>          <span class='id identifier rubyid_cookie_alert_render_secondary_alert'>cookie_alert_render_secondary_alert</span>
+        
+        <span class='kw'>else</span>
+
+          <span class='comment'># Display the full alert
+</span>          <span class='id identifier rubyid_cookie_alert_set_display_count_cookie'>cookie_alert_set_display_count_cookie</span> <span class='id identifier rubyid_num_views'>num_views</span> <span class='op'>+</span> <span class='int'>1</span>
+          <span class='id identifier rubyid_cookie_alert_render_primary_alert'>cookie_alert_render_primary_alert</span>
+
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr 30 12:38:52 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
