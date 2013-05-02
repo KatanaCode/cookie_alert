@@ -86,7 +86,7 @@ Please [check the WIKI](http://katanacode.com/cookie_alert/wiki) for a full list
 ## JavaScript
 
 The default Alerts use JQuery to allow a server-side response and to add effects.  You can easily change this to use a different JavaScript framework 
-(or none at all!). [Check the WIKI](http://katanacode.com/cookie_alert/wiki) to see how.
+(or none at all!). [Check the WIKI](https://github.com/KatanaCode/cookie_alert/wiki) to see how.
 
 ## IMPORTANT
 
