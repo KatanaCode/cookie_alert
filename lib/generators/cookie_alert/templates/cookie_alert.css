@@ -31,6 +31,7 @@
 #cookie_alert_text {
   margin-left: 80px;
   line-height: 1.5em;
+  text-shadow: 1px 1px 0 #444444;
 }
 
 
@@ -50,7 +51,13 @@
 }
 
 #cookie_alert_close:hover {
-  text-decoration: none;
+  line-height: 1em;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
   background-color: red;
   color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #444444;
+  margin-left: 2px;
 }
