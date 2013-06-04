@@ -41,17 +41,16 @@ number of views, or display it constantly until the visitor 'accepts' the alert.
 
 6. Update your Asset Manifest files to add the JavaScript and CSS files:
 
-    * in application.js add 
+* in application.js add 
+    
+    ```Ruby
+    //= require cookie_alert
+    ```
+* in application.css add 
 
-        ```Ruby
-        //= require cookie_alert
-        ```
-
-    * in application.css add 
-
-        ```Ruby
-        *= require cookie_alert
-        ```
+    ```Ruby
+    *= require cookie_alert
+    ```
 
 ## Uninstall
 
