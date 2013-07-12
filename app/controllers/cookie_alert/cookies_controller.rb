@@ -7,7 +7,11 @@ module CookieAlert
     def cookie_accepted
 
       # Get the visitor's current page URL or, if nil?,  default to the application root
-      visitor_current_url = cookies.signed[CookieAlert.config.cookie_name.to_sym].split(CookieAlert.config.cookie_value_text_separator)[1] || main_app.root_path
+      visitor_current_url = if cookies.signed[CookieAlert.config.cookie_name.to_sym]
+        cookies.signed[CookieAlert.config.cookie_name.to_sym].split(CookieAlert.config.cookie_value_text_separator)[1]
+      else
+        main_app.root_path
+      end
 
       # Set the Cookie value to 'accepted'
       if CookieAlert.config.cookie_type == 'permanent'
