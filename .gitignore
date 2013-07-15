@@ -3,3 +3,4 @@
 spec/dummy/tmp/**/*
 .yardoc/
 Gemfile.lock
+pkg/*.gem
