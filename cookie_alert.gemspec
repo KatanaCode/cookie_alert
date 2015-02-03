@@ -13,12 +13,11 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/KatanaCode/cookie_alert"
   s.summary     = "Notify visitors that your site uses Cookies. For Rails 3.1 +"
   s.description = "Display a visual warning on your site to let visitors know that you use Cookes. Primarily intended for use with the UK Cookie Law"
+  s.license     = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 4.0"
-  s.add_dependency "jquery-rails"
-
+  s.add_development_dependency "rails", "~> 3.1"
   s.add_development_dependency "jquery-rails"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"

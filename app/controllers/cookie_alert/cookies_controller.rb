@@ -6,10 +6,10 @@ module CookieAlert
     # Implement cookie acceptance when a visitor click the 'accept' button
     def cookie_accepted
 
-      # Get the visitor's current page URL or, if nil?,  default to the application root
-      visitor_current_url = if cookies.signed[CookieAlert.config.cookie_name.to_sym]
+      # Get the visitor's current page URL or, if nil?,  default to the application root. Resue block needed for bots
+      visitor_current_url = begin
         cookies.signed[CookieAlert.config.cookie_name.to_sym].split(CookieAlert.config.cookie_value_text_separator)[1]
-      else
+      rescue
         main_app.root_path
       end
 
