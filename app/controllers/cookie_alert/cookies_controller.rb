@@ -22,7 +22,7 @@ module CookieAlert
       elsif CookieAlert.config.cookie_type == 'fixed_duration'
  
         # Set a fixed duration cookie
-        cookies.permanent.signed[CookieAlert.config.cookie_name.to_sym] = { value: 'accepted', expires: CookieAlert.config.num_days_until_cookie_expires.days.from_now }
+        cookies.signed[CookieAlert.config.cookie_name.to_sym] = { value: 'accepted', expires: CookieAlert.config.num_days_until_cookie_expires.days.from_now }
  
       else
  
