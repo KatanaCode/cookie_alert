@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Cookie Alert
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1>CookieAlert (beta)</h1>
+
+<p>CookieAlert will add an alert to your webpage informing your visitor that your website uses Cookies. It can be configured to display the Alert for a fixed 
+number of views, or display it constantly until the visitor &#39;accepts&#39; the alert. It:</p>
+
+<ul>
+<li>Will work &#39;straight out the box&#39; without any additional configuration</li>
+<li>Is fully customisable, including views, javascript response and number of displays.</li>
+<li>Aims to be a simple way to address the <a href="http://www.ico.org.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies">EU Cookie Law</a> requiring websites to notify their visitors that they use Cookies.</li>
+</ul>
+
+<h2>Install</h2>
+
+<ol>
+<li><p>Update <code>Gemfile</code> to add</p>
+
+<pre class="code Ruby"><code class="Ruby">  gem &quot;cookie_alert&quot;
+</code></pre></li>
+<li><p>Run bundle</p>
+
+<pre class="code bash"><code class="bash">bundle install
+</code></pre></li>
+<li><p>Install the configuration &amp; view files</p>
+
+<pre class="code bash"><code class="bash">rails g cookie_alert:install
+</code></pre></li>
+<li><p>Update your <code>app/helpers/application_helper.rb</code> file to include the CookieAlert module:</p>
+
+<pre class="code Ruby"><code class="Ruby">  include CookieAlert
+</code></pre></li>
+<li><p>Update your <code>config/routes.rb</code> file to add the CookieAlert route:</p>
+
+<pre class="code Ruby"><code class="Ruby">  mount CookieAlert::Engine =&gt; &quot;/cookie-alert&quot;
+</code></pre></li>
+<li><p>Update your Asset Manifest files to add the JavaScript and CSS files:</p></li>
+</ol>
+
+<ul>
+<li><p>in application.js add </p>
+
+<pre class="code Ruby"><code class="Ruby">//= require cookie_alert
+</code></pre></li>
+<li><p>in application.css add </p>
+
+<pre class="code Ruby"><code class="Ruby">*= require cookie_alert
+</code></pre></li>
+</ul>
+
+<h2>Uninstall</h2>
+
+<p>To remove the installed files run <code>rails g cookie_alert:uninstall</code></p>
+
+<h2>Displaying Alerts</h2>
+
+<p>To display the Cookie Alerts, simply call the following method from your layout <code>&lt;%= display_cookie_alert %&gt;</code></p>
+
+<h2>How It Works</h2>
+
+<p>When a visitor first comes to your site CookieAlert will set an encrypted Cookie that keeps track of how many pages the visitor has viewed and display a 
+Primary Alert notifying the visitor that your site uses Cookies. By default this Primary Alert is a large banner fixed at the foot of the screen.</p>
+
+<p>After the Primary Alert has been displayed a number of times (5 by default) it is replaced by a Secondary Alert. By default this is a smaller box fixed to 
+the bottom-left of the screen which transforms back to the the large banner when moused-over.</p>
+
+<p>The visitor can click a link to &#39;hide the banner&#39;, thereby accepting the notice, and the Alerts will no longer be displayed for the remainder of the session.</p>
+
+<h2>Configuration</h2>
+
+<p>CookieAlert can be configured to:</p>
+
+<ul>
+<li>Display a Primary Alert message until the visitor clicks the &#39;accept&#39; link.</li>
+<li>Display a Primary Alert message which, after a number of views, changes to a Secondary Alert message until the visitor clicks the &#39;accept&#39; link.</li>
+<li>Display a Primary Alert message then, after a number of views, stop showing any alert messages at all.</li>
+</ul>
+
+<p>Please <a href="https://github.com/KatanaCode/cookie_alert/wiki">check the WIKI</a> for a full list of the configuration options available.</p>
+
+<h2>JavaScript</h2>
+
+<p>The default Alerts use JQuery to allow a server-side response and to add effects.  You can easily change this to use a different JavaScript framework 
+(or none at all!). <a href="https://github.com/KatanaCode/cookie_alert/wiki">Check the WIKI</a> to see how.</p>
+
+<h2>IMPORTANT</h2>
+
+<p>If you are using CookieAlert to address the <a href="http://www.ico.org.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies">EU Cookie Law</a>, 
+  then within the Alert message you should also include a link to a Cookie Policy page where your visitors can view a description of the cookies used by 
+  your site. See <a href="http://katanacode.com">KatanaCode.com</a> for an example.</p>
+
+<p>Note that CookieAlert is designed to allow you to display alerts - <strong>the content and wording of the alert is entirely your own responsibility</strong>. 
+  KatanaCode do not warrant in any way that the default message, operation or usage of this Gem will make you compliant with the EU Cookie Law. 
+  It is up to you to ensure compliance!</p>
+
+<p>All we can say is that we use it ourselves.</p>
+
+<h2>Issues</h2>
+
+<p>If you discover a problem with CookieAlert, please let us know about it. </p>
+
+<p><strong>Remember</strong> to search the <a href="https://github.com/KatanaCode/cookie_alert/issues">issues list</a> first in case your issue has already been raised
+by another Githuber</p>
+
+<h2>Documentation</h2>
+
+<p>Full documentation is available here: <a href="http://rubydoc.info/gems/cookie_alert">http://rubydoc.info/gems/cookie_alert</a></p>
+
+<h2>Contributing</h2>
+
+<p>You&#39;re welcome to contribute to CookieAlert. Please consult the <a href="https://github.com/KatanaCode/cookie_alert/wiki/Contributing">contribution guidelines</a> 
+for more info.</p>
+
+<h2>Legal Stuff</h2>
+
+<p>Copyright 2013 <a href="http://katanacode.com">Katana Code Ltd.</a></p>
+
+<p>See MIT-LICENSE for full details.</p>
+
+<h2>Credits</h2>
+
+<p>Developed by <a href="http://github.com/CodeMeister">CodeMeister</a> at <a href="http://katanacode.com">Katana Code Ltd</a></p>
+
+<h2>About Katana Code</h2>
+
+<p>Katana Code are <a href="http://katanacode.com/" title="Katana Code">iPhone app and Ruby on Rails Developers in Edinburgh, Scotland</a>.</p>
+</div></div>
+
+      <div id="footer">
+  Generated on Thu Aug 13 16:44:32 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.24 (ruby-2.6.6).
+</div>
+
+    </div>
+  </body>
+</html>

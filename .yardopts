@@ -1,6 +1,7 @@
---markup markdown
+--plugin tomdoc
 --private
---title "CookieAlert"
-lib/**/*.rb -
-MIT-LICENSE
-README.md
+--hide-void-return
+--title "Cookie Alert"
+--output-dir=docs
+--markup=markdown
+--markup-provider=redcarpet
